@@ -1,0 +1,124 @@
+/* Estilos del h1 logos de contacto y primer parrafo */
+
+.main-contacto {
+    .contacto-redes {
+        margin: 3em;
+
+        a {
+            img {
+                width: 20vw;
+            }
+
+            .email-img {
+                padding-bottom: 0.5em;
+            }
+        }
+    }
+
+    text-align: center;
+    margin-top: 1em;
+
+    h1 {
+        font-size: 1.4em;
+        margin: 1em;
+    }
+
+    p {
+        width: 80vw;
+        margin: auto;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: $color3;
+
+        &:hover {
+            color: $color4;
+        }
+    }
+}
+
+/* Estilos de la info, calendario, medios de pago, cancelaciones */
+
+.contacto-img {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+
+
+    .img-p {
+        text-align: center;
+
+        img {
+            width: 2.5em;
+            margin-top: 2em;
+            margin-bottom: 1em;
+        }
+    }
+}
+
+
+/* estilos para tablet */
+
+@media(min-width: 768px) {
+
+    .main-contacto {
+        .contacto-redes {
+            a {
+
+                .email-img {
+                    padding-bottom: 1em;
+                    width: 22vw;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* estilos version desktop */
+
+@media(min-width: 1024px) {
+
+    .main-contacto {
+        h1 {
+            font-size: 3em;
+        }
+
+        .contacto-redes {
+            a {
+
+                img {
+                    width: 15vw;
+                    margin-left: 3em;
+                    margin-right: 3em;
+                }
+
+                .email-img {
+                    padding-bottom: 3em;
+                    width: 17vw;
+                }
+            }
+        }
+
+        p {
+            width: 800px;
+        }
+    }
+
+    .contacto-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .img-p {
+            width: 30%;
+
+            img {
+                width: 5em;
+            }
+        }
+    }
+}

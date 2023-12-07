@@ -1,0 +1,39 @@
+/* estilos del header version mobile */
+
+.navbar {
+    background-color: $color1;
+
+    .container-fluid {
+        background-color: $color1;
+    }
+}
+
+.logo {
+    margin-left: 0;
+    width: 40vw;
+}
+
+
+/* estilos del header version tablet */
+
+@media (min-width: 768px) {
+    .logo {
+        width: 25vw;
+        margin-right: 30vw;
+    }
+}
+
+/* estilos del header version desktop */
+
+@media (min-width: 1024px) {
+
+
+    .container-fluid {
+        height: 30vh;
+    }
+
+    .logo {
+        width: 20vw;
+        margin-right: 20vw;
+    }
+}

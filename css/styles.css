@@ -1,0 +1,978 @@
+/* VARIABLES */
+/* Color principal de Le Cine */
+/* Tipografias, reset */
+body {
+  background-color: #FFFFFF;
+}
+
+/* Estilos de las secciones */
+/* estilos del header version mobile */
+.navbar {
+  background-color: #FFFFFF;
+}
+.navbar .container-fluid {
+  background-color: #FFFFFF;
+}
+
+.logo {
+  margin-left: 0;
+  width: 40vw;
+}
+
+/* estilos del header version tablet */
+@media (min-width: 768px) {
+  .logo {
+    width: 25vw;
+    margin-right: 30vw;
+  }
+}
+/* estilos del header version desktop */
+@media (min-width: 1024px) {
+  .container-fluid {
+    height: 30vh;
+  }
+  .logo {
+    width: 20vw;
+    margin-right: 20vw;
+  }
+}
+/* estilos del index.html version mobile*/
+/* estilos del boton flotante de wsp*/
+.flotante-div {
+  width: 10vh;
+  position: fixed;
+  right: 5vw;
+  line-height: 150vh;
+}
+.flotante-div img {
+  width: 3em;
+  opacity: 90%;
+}
+
+/* estilos del modal */
+#section-modal {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: #FFFFFF;
+  margin-left: 15vw;
+  z-index: 1000;
+}
+#section-modal .modal-agua {
+  width: 70vw;
+  box-shadow: 0px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  border-radius: 4px;
+  font-weight: 500;
+  padding-top: 1em;
+}
+#section-modal .modal-agua img {
+  width: 2em;
+  margin-bottom: 0.8em;
+}
+#section-modal .modal-agua .button-agua {
+  width: 35%;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px;
+  border-style: none;
+  background-color: #FFFFFF;
+  font-weight: 400;
+  transition: all 0.3s;
+  color: black;
+}
+#section-modal .modal-agua .button-agua:hover {
+  background-color: #B2DA53;
+  color: #FFFFFF;
+}
+
+/* estilos del main, carrusel y seccion de tratamientos*/
+.carousel-item img {
+  height: 50vh;
+}
+
+#tratamientos h1 {
+  margin: 2em;
+  text-align: center;
+}
+#tratamientos h2 {
+  margin: 2em;
+  text-align: center;
+}
+#tratamientos .mas-info p {
+  text-align: center;
+}
+#tratamientos .mas-info p a {
+  color: #94C33A;
+  text-decoration: none;
+}
+#tratamientos .tratamientos-img p {
+  text-align: center;
+  width: 80vw;
+  margin: auto;
+}
+#tratamientos .tratamientos-img p a {
+  text-decoration: none;
+  color: #B2DA53;
+}
+#tratamientos .tratamientos-img p a:hover {
+  color: #94C33A;
+}
+#tratamientos .box-animados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#tratamientos .box-animados h3 {
+  font-size: 0.5em;
+  width: 60vw;
+}
+#tratamientos .box-animados .img-tratamientos-animada {
+  display: none;
+}
+
+/* estilos del aside */
+/*imagen del enlace a la seccion de recetas*/
+.recetas-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.recetas-section h4 {
+  font-size: small;
+  margin: 1em;
+}
+.recetas-section img {
+  width: 60vw;
+  border-radius: 5px;
+  margin-top: 1em;
+  transition: all 0.3s;
+}
+.recetas-section img:hover {
+  scale: 1.1;
+}
+
+/*seccion acerca de mi */
+.sobre-mi-div {
+  text-align: center;
+  margin-top: 1em;
+}
+.sobre-mi-div img {
+  width: 10em;
+  margin-bottom: 2em;
+  list-style-position: inside;
+  padding: 0;
+}
+.sobre-mi-div .descripcion-guada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sobre-mi-div .descripcion-guada p {
+  width: 80vw;
+}
+
+/* estilos del index.html version tablet*/
+@media (min-width: 768px) {
+  /* estilos para el modal tablet */
+  #section-modal {
+    margin-left: 30vw;
+  }
+  #section-modal .modal-agua {
+    width: 40vw;
+  }
+  #section-modal .modal-agua .button-agua {
+    width: 25%;
+  }
+  .carousel-item img {
+    height: 90vh;
+  }
+  /* boton flotante wsp tablet */
+  .flotante-div {
+    line-height: 130vh;
+  }
+  /* seccion tratamientos para tablet */
+  #tratamientos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #tratamientos h2 {
+    margin-bottom: 2em;
+  }
+  #tratamientos .tratamientos-1 {
+    display: flex;
+  }
+  #tratamientos .tratamientos-1 .box-animados {
+    display: flex;
+  }
+  #tratamientos .tratamientos-1 .box-animados h3 {
+    width: 20vw;
+    font-size: 1em;
+  }
+  #tratamientos .tratamientos-1 .box-animados .img-tratamientos-animada {
+    display: flex;
+    flex-direction: row;
+    width: 8vw;
+  }
+  #tratamientos .tratamientos-2 {
+    margin-top: 1em;
+    display: flex;
+  }
+  #tratamientos .tratamientos-2 .box-animados {
+    display: flex;
+  }
+  #tratamientos .tratamientos-2 .box-animados h3 {
+    width: 20vw;
+    font-size: 1em;
+  }
+  #tratamientos .tratamientos-2 .box-animados .img-tratamientos-animada {
+    display: flex;
+    width: 8vw;
+  }
+  /* boton directo a wsp*/
+  .boton-wsp {
+    margin: 6em;
+  }
+  .boton-wsp .wsp {
+    margin-top: 3em;
+    width: 7em;
+  }
+  /* seccion recetas */
+  .recetas-section img {
+    width: 30vw;
+  }
+  /* seccion sobre mi*/
+  .sobre-mi-div {
+    margin-top: 10vh;
+    display: flex;
+  }
+  .sobre-mi-div img {
+    width: 18em;
+    margin-left: 2em;
+  }
+  .sobre-mi-div .descripcion-guada {
+    margin-left: 2em;
+    margin-right: 1em;
+  }
+  .sobre-mi-div .descripcion-guada p {
+    width: 50vw;
+  }
+}
+/* estilos del index.html version desktop */
+@media (min-width: 1024px) {
+  /* boton flotante wsp desktop */
+  .flotante-div {
+    line-height: 110vh;
+  }
+  .flotante-div img {
+    width: 4em;
+  }
+  /* modal de tomar agua */
+  #section-modal {
+    margin-left: 40vw;
+  }
+  #section-modal .modal-agua {
+    width: 20vw;
+  }
+  #section-modal .modal-agua .button-agua {
+    width: 6vw;
+  }
+  /*detalles para el carrusel desktop */
+  .carousel-item img {
+    height: 125vh;
+  }
+  /* tratamientos-img */
+  #tratamientos .tratamientos-img p {
+    width: 800px;
+    text-align: left;
+  }
+  /* estilos seccion sobre mi desktop */
+  .sobre-mi-div {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5em;
+  }
+  .sobre-mi-div .descripcion-guada {
+    padding-top: 1em;
+    margin-left: 3em;
+  }
+  .sobre-mi-div .descripcion-guada p {
+    text-align: left;
+    width: 50vw;
+  }
+  .sobre-mi-div img {
+    width: 15em;
+    margin-left: 10vw;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .logo img {
+  width: 60vw;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-right: 2em;
+}
+footer ul {
+  list-style-type: none;
+}
+footer ul a {
+  text-decoration: none;
+  color: #94C33A;
+}
+footer ul a:hover {
+  color: #B2DA53;
+}
+footer .copyright {
+  margin-left: 1em;
+  margin-top: 2em;
+  color: rgba(0, 0, 0, 0.466);
+}
+
+/* estilos footer version tablet */
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .logo {
+    margin: 0;
+  }
+  footer .logo img {
+    width: 30vw;
+    margin: 0;
+  }
+}
+/* estilos footer version desktop */
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+  }
+  footer ul {
+    margin-left: 15vw;
+  }
+  footer ul li {
+    margin-top: 1em;
+  }
+  footer .logo img {
+    width: 20vw;
+    margin: 0;
+  }
+  footer .copyright {
+    margin-left: 30vw;
+    margin-top: 20vh;
+  }
+}
+/* Estilos del h1 logos de contacto y primer parrafo */
+.main-contacto {
+  text-align: center;
+  margin-top: 1em;
+}
+.main-contacto .contacto-redes {
+  margin: 3em;
+}
+.main-contacto .contacto-redes a img {
+  width: 20vw;
+}
+.main-contacto .contacto-redes a .email-img {
+  padding-bottom: 0.5em;
+}
+.main-contacto h1 {
+  font-size: 1.4em;
+  margin: 1em;
+}
+.main-contacto p {
+  width: 80vw;
+  margin: auto;
+}
+.main-contacto a {
+  text-decoration: none;
+  color: #94C33A;
+}
+.main-contacto a:hover {
+  color: #B2DA53;
+}
+
+/* Estilos de la info, calendario, medios de pago, cancelaciones */
+.contacto-img {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;
+}
+.contacto-img .img-p {
+  text-align: center;
+}
+.contacto-img .img-p img {
+  width: 2.5em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+/* estilos para tablet */
+@media (min-width: 768px) {
+  .main-contacto .contacto-redes a .email-img {
+    padding-bottom: 1em;
+    width: 22vw;
+  }
+}
+/* estilos version desktop */
+@media (min-width: 1024px) {
+  .main-contacto h1 {
+    font-size: 3em;
+  }
+  .main-contacto .contacto-redes a img {
+    width: 15vw;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  .main-contacto .contacto-redes a .email-img {
+    padding-bottom: 3em;
+    width: 17vw;
+  }
+  .main-contacto p {
+    width: 800px;
+  }
+  .contacto-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .contacto-img .img-p {
+    width: 30%;
+  }
+  .contacto-img .img-p img {
+    width: 5em;
+  }
+}
+.tips-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tips-content .tip-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  box-shadow: 0px 0px 5px;
+  width: 90vw;
+}
+.tips-content .tip-card .img-tips {
+  width: 50vw;
+  margin-top: 2em;
+  border: 1px solid rgba(0, 0, 0, 0.126);
+  border-radius: 3px;
+}
+.tips-content .tip-card .div-p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.tips-content .tip-card .div-p .p-tips {
+  font-weight: bold;
+  margin-top: 1em;
+}
+.tips-content .tip-card .div-p .p-tips2 {
+  font-size: small;
+  width: 60vw;
+  margin-bottom: 3em;
+}
+
+@media (min-width: 768px) {
+  .tips-content .tip-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2em;
+    box-shadow: 0px 0px 5px;
+    width: 90vw;
+  }
+  .tips-content .tip-card .img-tips {
+    width: 20vw;
+    margin-left: 2em;
+    margin-top: 0;
+  }
+  .tips-content .tip-card .div-p .p-tips2 {
+    margin-left: 2em;
+    padding-right: 1em;
+  }
+}
+@media (min-width: 1024px) {
+  .tips-content .tip-card {
+    width: 80vw;
+  }
+  .tips-content .tip-card .img-tips {
+    width: 15vw;
+    margin: 2em 2em;
+  }
+  .tips-content .tip-card .div-p .p-tips2 {
+    width: 59vw;
+  }
+}
+/* estilos de la consultoria mobile */
+.h1-consultas {
+  text-align: center;
+  margin-top: 1em;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.portada {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+.portada .img-guada img {
+  width: 30vw;
+  margin: 1em;
+  box-shadow: 0px 0px 10px rgba(31, 8, 8, 0.534);
+}
+.portada .precio-consulta {
+  text-align: center;
+}
+.portada .precio-consulta p {
+  width: 70vw;
+}
+
+.detalles-consultas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.detalles-consultas h2 {
+  font-size: 1.1em;
+  margin-top: 2em;
+}
+.detalles-consultas p {
+  width: 90vw;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.mas-detalles {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mas-detalles h3 {
+  font-size: 1em;
+  text-align: center;
+}
+.mas-detalles ul {
+  margin-top: 2em;
+  margin-bottom: 3em;
+  width: 90vw;
+}
+.mas-detalles ul li {
+  padding-right: 1em;
+}
+
+.boton-wsp2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.boton-wsp2 h4 {
+  font-size: 1em;
+}
+.boton-wsp2 .wsp {
+  width: 7em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px rgba(31, 8, 8, 0.534);
+  border-style: none;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.boton-wsp2 .wsp a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.boton-wsp2 .wsp a:hover {
+  color: #FFFFFF;
+}
+.boton-wsp2 .wsp:hover {
+  background-color: #B2DA53;
+}
+
+.mas-detalles2 {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mas-detalles2 h3 {
+  font-size: 1em;
+  text-align: center;
+}
+.mas-detalles2 ul {
+  margin-top: 2em;
+  margin-bottom: 3em;
+  width: 90vw;
+}
+.mas-detalles2 ul li {
+  padding-right: 1em;
+}
+
+/* estilos para tablet */
+@media (min-width: 768px) {
+  .mas-detalles {
+    width: 60vw;
+  }
+  .mas-detalles2 {
+    width: 60vw;
+  }
+}
+.boton-wsp .wsp {
+  width: 20%;
+}
+
+/* estilos version desktop */
+@media (min-width: 1024px) {
+  .portada {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10vh;
+  }
+  .portada .img-guada img {
+    width: 15vw;
+    box-shadow: 0px 0px 10px;
+  }
+  .portada .precio-consulta {
+    text-align: center;
+    margin-left: 3em;
+  }
+  .portada .precio-consulta p {
+    width: 20vw;
+  }
+  .detalles-consultas h2 {
+    font-size: 1.5em;
+  }
+  .detalles-consultas p {
+    width: 800px;
+    display: flex;
+    text-align: left;
+  }
+  .mas-detalles-section {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .mas-detalles-section .mas-detalles {
+    width: 50%;
+  }
+  .mas-detalles-section .mas-detalles ul {
+    width: 60%;
+    margin-left: 25%;
+  }
+  .mas-detalles-section .mas-detalles2 {
+    width: 50%;
+  }
+  .mas-detalles-section .mas-detalles2 ul {
+    width: 60%;
+    margin-left: 25%;
+  }
+  .boton-wsp .wsp {
+    width: 10vw;
+  }
+}
+/* estilos version mobile */
+.h1 {
+  font-size: 1.3em;
+  margin: 1em 0em;
+  text-align: center;
+}
+
+.main .contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main .contenido .img-plato {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.main .contenido .img-plato img {
+  width: 70vw;
+}
+.main .contenido h2 {
+  font-size: 1em;
+  margin-bottom: 1em;
+  width: 80vw;
+}
+.main .contenido .p-plato {
+  text-align: center;
+}
+.main .contenido ul {
+  width: 80vw;
+}
+
+.aside {
+  display: none;
+}
+
+.articulos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.articulos .titulo-articulo {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+.articulos .articulo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+}
+.articulos .articulo-card .titulo-articulo {
+  display: flex;
+  text-align: center;
+}
+.articulos .articulo-card .img-articulo {
+  width: 50vw;
+  margin-bottom: 1em;
+  width: 60vw;
+  border: 1px solid rgba(0, 0, 0, 0.247);
+  border-radius: 6px;
+}
+.articulos .articulo-card .informacion-articulo {
+  width: 70vw;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .h1 {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    font-size: 2em;
+  }
+  .main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* el aside solo disponible apartir de version tablet */
+  }
+  .main .contenido {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .contenido h2 {
+    font-size: 1.1em;
+  }
+  .main .contenido ul {
+    width: 70%;
+    margin-top: 2em;
+    right: auto;
+  }
+  .main .contenido .img-plato img {
+    width: 50vw;
+  }
+  .main .aside {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.253);
+    border-radius: 5px;
+    width: 25%;
+    margin: 0em 0.5em;
+    height: 122vh;
+    box-shadow: 0px 5px 5px;
+    overflow-y: scroll;
+  }
+  .main .aside::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  .main .aside::-webkit-scrollbar-thumb {
+    background-color: #B2DA53;
+    border-radius: 0.15em;
+  }
+  .main .aside::-webkit-scrollbar-thumb:hover {
+    background-color: #94C33A;
+  }
+  .main .aside .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .main .aside .info h3 {
+    font-size: 1.3em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 20vw;
+  }
+  .main .aside .info img {
+    width: 10vw;
+    border-radius: 2px;
+  }
+  .main .aside .info p {
+    width: 20vw;
+  }
+  .main .aside .info p a {
+    color: #B2DA53;
+    text-decoration: none;
+  }
+  .main .aside .info p a:hover {
+    color: #94C33A;
+  }
+}
+.articulos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.articulos .titulo-articulo {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  display: flex;
+  text-align: center;
+}
+.articulos .articulo-card .img-articulo {
+  width: 30vw;
+}
+
+@media (min-width: 1024px) {
+  .main .contenido .img-plato img {
+    width: 30vw;
+  }
+  .articulos .titulo-articulo {
+    font-size: 1.5em;
+    margin-bottom: 3em;
+  }
+  .articulos .articulo-card {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 5em;
+  }
+  .articulos .articulo-card .img-articulo {
+    width: 25vw;
+  }
+  .articulos .articulo-card .informacion-articulo {
+    width: 60vw;
+    margin-left: 2vw;
+    text-align: left;
+    padding: 1em;
+  }
+}
+.recetario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recetario div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1em;
+  border-radius: 2px;
+  width: 70vw;
+}
+.recetario div .img-receta {
+  width: 50vw;
+  margin: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.39);
+  border-radius: 2px;
+}
+.recetario div .titulo-receta {
+  font-size: 1.2em;
+  margin: 1em;
+  width: 60vw;
+}
+.recetario div .ingredientes-titulo {
+  font-size: 1em;
+  margin-top: 1em;
+  width: 60vw;
+}
+.recetario div .ingredientes-receta {
+  width: 60vw;
+  margin: 0.5em;
+}
+.recetario div .elaboracion-titulo {
+  font-size: 1em;
+  width: 60vw;
+  margin-top: 2em;
+}
+.recetario div .elaboracion-receta {
+  width: 60vw;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+@media (min-width: 1024px) {
+  .recetario {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3em;
+    align-items: center;
+    justify-content: center;
+  }
+  .recetario div {
+    width: 40vw;
+    height: 140vh;
+  }
+  .recetario div .img-receta {
+    width: 30vw;
+  }
+  .recetario div .titulo-receta {
+    width: 30vw;
+  }
+  .recetario div .ingredientes-titulo {
+    width: 60vw;
+  }
+  .recetario div .ingredientes-receta {
+    width: 30vw;
+  }
+  .recetario div .elaboracion-titulo {
+    width: 30vw;
+  }
+  .recetario div .elaboracion-receta {
+    width: 30vw;
+  }
+}
+.porciones .arroz-fideos img {
+  width: 80vw;
+}/*# sourceMappingURL=styles.css.map */

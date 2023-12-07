@@ -1,0 +1,105 @@
+// recetario version mobile
+
+.recetario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        margin: 1em;
+        border-radius: 2px;
+        width: 70vw;
+
+
+        .img-receta {
+            width: 50vw;
+            margin: 1em;
+            border: 1px solid rgba(0, 0, 0, 0.39);
+            border-radius: 2px;
+        }
+
+        .titulo-receta {
+            font-size: 1.2em;
+            margin: 1em;
+            width: 60vw;
+        }
+
+        .ingredientes-titulo {
+            font-size: 1em;
+            margin-top: 1em;
+            width: 60vw;
+        }
+
+        .ingredientes-receta {
+
+            width: 60vw;
+            margin: 0.5em;
+
+        }
+
+        .elaboracion-titulo {
+            font-size: 1em;
+            width: 60vw;
+            margin-top: 2em;
+        }
+
+        .elaboracion-receta {
+            width: 60vw;
+            padding-top: 1em;
+            padding-bottom: 2em;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .recetario {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 3em;
+        align-items: center;
+        justify-content: center;
+
+        div {
+            width: 40vw;
+            height: 140vh;
+
+            .img-receta {
+                width: 30vw;
+
+            }
+
+            .titulo-receta {
+
+                width: 30vw;
+            }
+
+            .ingredientes-titulo {
+
+                width: 60vw;
+            }
+
+            .ingredientes-receta {
+                width: 30vw;
+
+            }
+
+            .elaboracion-titulo {
+                width: 30vw;
+            }
+
+            .elaboracion-receta {
+                width: 30vw;
+
+            }
+
+        }
+
+    }
+}

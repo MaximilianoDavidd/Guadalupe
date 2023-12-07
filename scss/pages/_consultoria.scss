@@ -1,0 +1,237 @@
+/* estilos de la consultoria mobile */
+
+.h1-consultas {
+    text-align: center;
+    margin-top: 1em;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.portada {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+
+    .img-guada {
+        img {
+            width: 30vw;
+            margin: 1em;
+            box-shadow: 0px 0px 10px rgba(31, 8, 8, 0.534);
+        }
+    }
+
+    .precio-consulta {
+        text-align: center;
+
+        p {
+            width: 70vw;
+        }
+    }
+}
+
+.detalles-consultas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        font-size: 1.1em;
+        margin-top: 2em;
+    }
+
+    p {
+        width: 90vw;
+        margin-top: 1em;
+        text-align: center;
+    }
+}
+
+.mas-detalles {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    ul {
+        margin-top: 2em;
+        margin-bottom: 3em;
+        width: 90vw ;
+       
+
+        li {
+            padding-right: 1em;
+
+        }
+    }
+
+
+}
+
+.boton-wsp2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    h4 {
+        font-size: 1em;
+
+    }
+
+    .wsp {
+    width: 7em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+        border-radius: 6px;
+        box-shadow: 0px 0px 10px rgba(31, 8, 8, 0.534);
+        border-style: none;
+        text-decoration: none;
+        transition: all .3s;
+        a{
+            color: black;
+            text-decoration: none;
+            transition: all .2s;
+            &:hover{
+                color: $color1;
+            }
+
+        }
+        
+        &:hover {
+            background-color: $color4;
+          
+        }
+    }
+
+
+}
+
+.mas-detalles2 {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    ul {
+        margin-top: 2em;
+        margin-bottom: 3em;
+        width: 90vw;
+
+        li {
+            padding-right: 1em;
+
+        }
+    }
+}
+
+/* estilos para tablet */
+
+@media(min-width: 768px) {
+
+    .mas-detalles {
+        width: 60vw;
+    }
+
+    .mas-detalles2 {
+        width: 60vw;
+    }
+
+}
+
+.boton-wsp {
+
+    .wsp {
+        width: 20%;}}
+
+/* estilos version desktop */
+
+@media (min-width: 1024px) {
+
+    .portada {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 10vh;
+
+
+        .img-guada {
+
+            img {
+                width: 15vw;
+                box-shadow: 0px 0px 10px;
+            }
+        }
+
+        .precio-consulta {
+            text-align: center;
+            margin-left: 3em;
+
+            p {
+                width: 20vw;
+
+            }
+        }
+    }
+
+    .detalles-consultas {
+        h2 {
+            font-size: 1.5em;
+
+        }
+
+        p {
+            width: 800px;
+            display: flex;
+            text-align: left;
+        }
+    }
+
+    .mas-detalles-section {
+        display: flex;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+
+
+        .mas-detalles {
+            width: 50%;
+
+            ul {
+                width: 60%;
+                margin-left: 25%;
+            }
+        }
+
+        .mas-detalles2 {
+            width: 50%;
+
+            ul {
+                width: 60%;
+                margin-left: 25%;
+
+            }
+        }
+
+
+    }
+    .boton-wsp {
+
+        .wsp {
+            width: 10vw;}}
+
+
+}

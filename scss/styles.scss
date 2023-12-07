@@ -1,0 +1,23 @@
+
+/* VARIABLES */
+
+@import './variables/variables.scss';
+
+
+/* Tipografias, reset */
+
+@import './assets/reset';
+
+
+/* Estilos de las secciones */
+
+@import './pages/header';
+@import './pages/index';
+@import './pages/footer';
+@import './pages/contacto';
+@import './pages/tips';
+@import './pages/consultoria';
+@import './pages/informacion';
+@import './pages/recetas';
+@import './pages/porciones';
+
