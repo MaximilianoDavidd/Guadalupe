@@ -25,15 +25,16 @@ const tips = [
         parrafo2: "Las legumbres pueden generar gases, pero existen técnicas culinarias que ayudan a evitar esto. Además, el cuerpo se adapta tras su consumo regular, reduciendo la inflamación y distensión abdominal. Para quienes no están acostumbrados, se sugiere comenzar consumiendo harinas de legumbre en pequeñas cantidades, remojar los granos durante al menos 12 horas antes de cocinarlos y consumirlos recién cocidos, ya que su estructura es menos fermentable en comparación con la versión fría. Acompañar las legumbres con vegetales cocidos sin cáscara también. Se recomienda incorporarlas con frecuencia semanal para permitir que el cuerpo se acostumbre gradualmente.",
         img: "../recursos/legumbres-tips.jpg",
 
-    }, 
+    },
 
+    
     {
         id: 4,
-        parrafo: "Infusiones",
-        parrafo2: "Cuando consumimos infusiones, caldos o bebidas, no solo estamos ingiriendo agua; lo que les proporciona sabor y color debe ser absorbido en el aparato digestivo y luego eliminado a través de la orina. Ambos procesos gastan agua. Por lo tanto, no queda agua libre para otras funciones corporales. Por esta razón, siempre se recomienda beber agua sola. En el cuerpo, el agua es esencial para regular la temperatura corporal, mantener las células limpias, lubricar las articulaciones y facilitar la eliminación de sustancias tóxicas. Además, contribuye a una buena circulación venosa, permitiendo recoger los desechos celulares y transportarlos hasta los riñones para su eliminación.",
-        img: "../recursos/infusion-tips.webp",
+        parrafo: "Los frutos secos son una excelente opción de colación",
+        parrafo2: "Son ricos en proteínas, grasas saludables, fibra y vitaminas. Gracias a sus grasas saludables, como el omega-3 y el ácido oleico, pueden mejorar la salud del corazón. Su contenido de fibra y grasas saludables ayuda a sentirse lleno/a y controlar el apetito. Tienen un bajo índice glucémico, lo que ayuda a mantener niveles estables de azúcar en sangre. Ricos en antioxidantes, como la vitamina E, protegen las células del daño oxidativo. ¡Ojo con la cantidad! Recuerda que la porción es de 1 puñadito. Si te generan inflamación, no los consumas seguido.",
+        img: "https://media.istockphoto.com/id/1254659212/es/foto/tuercas-en-las-manos-de-las-mujeres.jpg?s=612x612&w=0&k=20&c=oKo2tS2Dct3rfIgrCnT04xGirXO6OxMXnDFXSDb9F9s=",
 
-    }, 
+    }
 
 
 

@@ -1,5 +1,23 @@
 // estilos version mobile
 
+// estilos del main
+
+.main-tips{
+    margin-top: 1em;
+    h1{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+    p{
+        width: 80vw;
+        margin: auto;
+
+    }
+}
+
 .tips-content{
     display: flex;
     flex-direction: column;
@@ -11,7 +29,7 @@
         align-items: center;
         margin-top: 2em;
         box-shadow: 0px 0px 5px;
-        width: 90vw;
+        width: 85vw;
 
 
         .img-tips{
@@ -31,6 +49,7 @@
             .p-tips{
                 font-weight: bold;
                 margin-top: 1em;
+                width: 80vw;
             }
             .p-tips2{
                 font-size: small;
@@ -67,9 +86,14 @@
 
         .div-p{
 
+            .p-tips{
+                width: 20vw;
+            }
+
             .p-tips2{
                 margin-left: 2em;
                 padding-right: 1em;
+
             }
         }
 
@@ -82,6 +106,14 @@
 
 
 @media (min-width: 1024px) {
+
+    .main-tips{
+
+        p{
+            width: 900px;
+    
+        }
+    }
 
 
     .tips-content{
@@ -98,7 +130,7 @@
             .div-p{
     
                 .p-tips2{
-                   width: 59vw;
+                   width: 50vw;
                 }
             }
     

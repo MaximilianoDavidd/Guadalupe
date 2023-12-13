@@ -93,7 +93,7 @@ body {
 
 /* estilos del main, carrusel y seccion de tratamientos*/
 .carousel-item img {
-  height: 50vh;
+  height: 45vh;
 }
 
 #tratamientos h1 {
@@ -460,6 +460,21 @@ footer .copyright {
     width: 5em;
   }
 }
+.main-tips {
+  margin-top: 1em;
+}
+.main-tips h1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.main-tips p {
+  width: 80vw;
+  margin: auto;
+}
+
 .tips-content {
   display: flex;
   flex-direction: column;
@@ -471,7 +486,7 @@ footer .copyright {
   align-items: center;
   margin-top: 2em;
   box-shadow: 0px 0px 5px;
-  width: 90vw;
+  width: 85vw;
 }
 .tips-content .tip-card .img-tips {
   width: 50vw;
@@ -489,6 +504,7 @@ footer .copyright {
 .tips-content .tip-card .div-p .p-tips {
   font-weight: bold;
   margin-top: 1em;
+  width: 80vw;
 }
 .tips-content .tip-card .div-p .p-tips2 {
   font-size: small;
@@ -510,12 +526,18 @@ footer .copyright {
     margin-left: 2em;
     margin-top: 0;
   }
+  .tips-content .tip-card .div-p .p-tips {
+    width: 20vw;
+  }
   .tips-content .tip-card .div-p .p-tips2 {
     margin-left: 2em;
     padding-right: 1em;
   }
 }
 @media (min-width: 1024px) {
+  .main-tips p {
+    width: 900px;
+  }
   .tips-content .tip-card {
     width: 80vw;
   }
@@ -524,7 +546,7 @@ footer .copyright {
     margin: 2em 2em;
   }
   .tips-content .tip-card .div-p .p-tips2 {
-    width: 59vw;
+    width: 50vw;
   }
 }
 /* estilos de la consultoria mobile */
@@ -751,6 +773,7 @@ h2 {
 .articulos .titulo-articulo {
   font-size: 1.2em;
   margin-bottom: 1em;
+  width: 80vw;
 }
 .articulos .articulo-card {
   display: flex;
@@ -866,6 +889,7 @@ h2 {
   margin-bottom: 1em;
   display: flex;
   text-align: center;
+  justify-content: center;
 }
 .articulos .articulo-card .img-articulo {
   width: 30vw;
