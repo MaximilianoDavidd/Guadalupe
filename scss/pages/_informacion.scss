@@ -29,7 +29,7 @@
             width: 80vw;
         }
 
-        .p-plato{
+        .p-plato {
             text-align: center;
         }
 
@@ -43,6 +43,63 @@
 .aside {
     display: none;
 }
+
+//estilos del primer articulo
+
+.card-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    .titulo-articulo1 {
+        font-size: 1.2em;
+        margin-bottom: 1em;
+        width: 80vw;
+
+    }
+
+    .div-articulo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50vw;
+
+        .img-articulo1 {
+            width: 50vw;
+            margin-bottom: 1em;
+            width: 30vw;
+            border: 1px solid rgba(0, 0, 0, 0.247);
+            border-radius: 6px;
+        }
+
+        .informacion-articulo1 {
+            width: 70vw;
+            border-radius: 5px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+
+        .enlace-img {
+            width: 80vw;
+            color: $color3;
+        }
+
+        img {
+            width: 2em;
+            height: 2em;
+
+        }
+    }
+}
+
+
 
 // estilos de los articulos de js
 
@@ -67,7 +124,7 @@
         align-items: center;
         width: 50vw;
 
-        .titulo-articulo{
+        .titulo-articulo {
             display: flex;
             text-align: center;
 
@@ -86,9 +143,9 @@
 
             width: 70vw;
             border-radius: 5px;
-
-
         }
+
+
     }
 }
 
@@ -201,30 +258,41 @@
 
         }
     }
-}
 
-.articulos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    // detalle de articulo 1 para tablet
 
-    .titulo-articulo {
-        font-size: 1.2em;
-        margin-bottom: 1em;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .articulo-card {
-
-        .img-articulo {
+    .card-1 {
+        a {
             width: 30vw;
-
         }
     }
+
+    // estilos de los articulos version tablet
+
+    .articulos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .titulo-articulo {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .articulo-card {
+
+            .img-articulo {
+                width: 30vw;
+
+            }
+        }
+    }
+
 }
 
 
@@ -233,26 +301,51 @@
     .main {
         .contenido {
 
-    
+
             .img-plato {
-    
+
                 img {
                     width: 30vw;
                 }
             }
 
-        }}
+        }
+    }
+
+
+    //estilos del primer articulo
+
+    .card-1 {
+
+        .titulo-articulo1 {
+            font-size: 1.5em;
+            margin-bottom: 3em;
+        }
+
+        .div-articulo {
+            display: flex;
+            flex-direction: row;
+            width: 70%;
+            margin: auto;
+            margin-bottom: 5em;
+
+            .informacion-articulo1 {
+                width: 60vw;
+                margin-left: 2vw;
+                text-align: left;
+                padding: 1em;
+
+            }
+        }
+    }
+
 
     .articulos {
 
 
         .titulo-articulo {
             font-size: 1.5em;
-
             margin-bottom: 3em;
-
-
-
         }
 
         .articulo-card {
@@ -278,4 +371,3 @@
         }
     }
 }
-    
