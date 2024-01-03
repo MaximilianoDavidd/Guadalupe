@@ -927,9 +927,11 @@ h2 {
   .main .aside .info img {
     width: 10vw;
     border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
   }
   .main .aside .info p {
     width: 20vw;
+    margin-top: 0.5em;
   }
   .main .aside .info p a {
     color: #B2DA53;
@@ -1056,8 +1058,8 @@ h2 {
     justify-content: center;
   }
   .recetario div {
-    width: 40vw;
-    height: 140vh;
+    width: 36vw;
+    height: 61em;
   }
   .recetario div .img-receta {
     width: 30vw;

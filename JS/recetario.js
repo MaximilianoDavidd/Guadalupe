@@ -6,7 +6,7 @@ const recetas = [
         id: 18,
         name: "Albóndigas Veganas (Sin TACC)",
         ingredientes: "Un atado de espinaca. Un brócoli. 200g de harina de garbanzos. Sal. Pimienta.  ",
-        elaboracion: "Procesar el atado de espinada y el brócoli (ambas hortalizas crudas). Luego, en un recipiente mezclar el procesado con la harina de garbanzos. Salpimentar a gusto y formar las albóndigas. Finalmente llevar al horno hasta dorar por todos lados. Servir con salsa de tomate",
+        elaboracion: "Para preparar estas albóndigas vegetales, comienza procesando espinacas y brócoli crudos. En un recipiente, mezcla este procesado con harina de garbanzos hasta lograr una masa homogénea. Sazona con sal y pimienta al gusto y forma albóndigas del tamaño deseado. Lleva al horno precalentado hasta que estén doradas por todos lados. Sirve con salsa de tomate o la guarnición de tu elección.",
         img: "../recursos/albondigas-espinaca.jpeg",
 
     },
