@@ -1003,6 +1003,47 @@ h2 {
     padding: 1em;
   }
 }
+.tacc-filter {
+  display: flex;
+  justify-content: center;
+}
+.tacc-filter .button-tacc {
+  margin-right: 0.5em;
+  width: 5em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px rgba(31, 8, 8, 0.534);
+  border-style: none;
+  transition: all 0.3s;
+  color: black;
+  transition: all 0.2s;
+}
+.tacc-filter .button-tacc:hover {
+  color: #FFFFFF;
+}
+.tacc-filter .button-tacc:hover {
+  background-color: #B2DA53;
+}
+.tacc-filter .all-recipes {
+  margin-left: 0.5em;
+  width: 5em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px rgba(31, 8, 8, 0.534);
+  border-style: none;
+  transition: all 0.3s;
+  color: black;
+  transition: all 0.2s;
+}
+.tacc-filter .all-recipes:hover {
+  color: #FFFFFF;
+}
+.tacc-filter .all-recipes:hover {
+  background-color: #B2DA53;
+}
+
 .recetario {
   display: flex;
   flex-direction: column;
@@ -1049,6 +1090,14 @@ h2 {
 }
 
 @media (min-width: 1024px) {
+  .tacc-filter .button-tacc {
+    margin-right: 1.5em;
+    width: 7em;
+  }
+  .tacc-filter .all-recipes {
+    margin-left: 1.5em;
+    width: 7em;
+  }
   .recetario {
     display: flex;
     flex-direction: row;
