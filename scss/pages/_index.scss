@@ -4,10 +4,12 @@
 
 .flotante-div {
 
-    width: 10vh;
+    width: 10vw;
+    height: 5em;
     position: fixed;
-    right: 5vw;
+    right: 7vw;
     line-height: 150vh;
+    z-index: 1000;
 
     img {
         width: 3em;
@@ -219,6 +221,7 @@
 
     .flotante-div {
         line-height: 130vh;
+        right: 0em;
     }
 
     /* seccion tratamientos para tablet */
@@ -325,10 +328,10 @@
     /* boton flotante wsp desktop */
 
     .flotante-div {
-        line-height: 110vh;
 
         img {
             width: 4em;
+            margin-bottom: 10em;
         }
     }
 

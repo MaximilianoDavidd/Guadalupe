@@ -1,9 +1,32 @@
 // estilos para version mobile
 
 .porciones{
-    .arroz-fideos{
-        img{
-            width: 80vw;
-        }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    h1{
+        font-size: 1.2em;
+        margin: 2em;
     }
+    
+    p{
+        width: 80%;
+    }
+}
+
+@media (min-width: 1024px){
+    
+.porciones{
+    h1{
+        font-size: 1.5em;
+        margin: 2em;
+    }
+    
+    p{
+        width: 900px;
+    }
+}
+    
 }

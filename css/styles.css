@@ -39,10 +39,12 @@ body {
 /* estilos del index.html version mobile*/
 /* estilos del boton flotante de wsp*/
 .flotante-div {
-  width: 10vh;
+  width: 10vw;
+  height: 5em;
   position: fixed;
-  right: 5vw;
+  right: 7vw;
   line-height: 150vh;
+  z-index: 1000;
 }
 .flotante-div img {
   width: 3em;
@@ -197,6 +199,7 @@ body {
   /* boton flotante wsp tablet */
   .flotante-div {
     line-height: 130vh;
+    right: 0em;
   }
   /* seccion tratamientos para tablet */
   #tratamientos {
@@ -269,11 +272,9 @@ body {
 /* estilos del index.html version desktop */
 @media (min-width: 1024px) {
   /* boton flotante wsp desktop */
-  .flotante-div {
-    line-height: 110vh;
-  }
   .flotante-div img {
     width: 4em;
+    margin-bottom: 10em;
   }
   /* modal de tomar agua */
   #section-modal {
@@ -1129,6 +1130,27 @@ h2 {
     width: 30vw;
   }
 }
-.porciones .arroz-fideos img {
-  width: 80vw;
+.porciones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.porciones h1 {
+  font-size: 1.2em;
+  margin: 2em;
+}
+.porciones p {
+  width: 80%;
+}
+
+@media (min-width: 1024px) {
+  .porciones h1 {
+    font-size: 1.5em;
+    margin: 2em;
+  }
+  .porciones p {
+    width: 900px;
+  }
 }/*# sourceMappingURL=styles.css.map */
