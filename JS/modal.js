@@ -6,29 +6,47 @@ document.addEventListener("DOMContentLoaded", function () {
     // Ocultar el modal iniciamente al cargar la pagina
     modal.style.display = "none";
 
+    // Obetener informacion del localStorage
+    const modalInfo = JSON.parse(localStorage.getItem("modalInfo")) || {};
+    const { ultimaVez, cerrado } = modalInfo;
+
+    //Calcular el tiempo que paso desde que se mostro por ultima vez
+    const tiempoActual = new Date().getTime();
+    const tiempoTranscurrido = tiempoActual - (ultimaVez || 0);
+
+    // VEr si pasaron 3 horas
+    const mostrarModal = !cerrado || tiempoTranscurrido >= 3 * 60 * 60 * 1000;
+
+    if (mostrarModal) {
     //  mostrar el modal despues de 10 segundos de entrar a la pagina
 
     setTimeout(() => {
         modal.style.display = "block";
     }, 10000);
+    }
 
-    // al presionar el boton el modal se cierra
+    // al presionar el boton el modal se cierra y actualiza el localStorage
     acceptedButton.addEventListener("click", () => {
         modal.style.display = "none";
+        localStorage.setItem("modalInfo", JSON.stringify({ultimaVez: tiempoActual, cerrado: true}));
+        console.log("Información guardada en localStorage:", modalInfo);
         Swal.fire({
             title: 'Grandioso!',
             confirmButtonText: 'Cerrar',
             confirmButtonColor: '#B2DA53',
-            html: '<img src="../recursos/gatito.gif" style="width: 50px; height: 50px;">', // Agrega la ruta de tu gif y ajusta el tamaño según sea necesario
+            html: '<img src="../recursos/gatito.gif" style="width: 50px; height: 50px;">',
         });
     });
+
     rejectdButton.addEventListener("click", () => {
         modal.style.display = "none";
+        localStorage.setItem("modalInfo", JSON.stringify({ultimaVez: tiempoActual, cerrado: true}));
+        console.log("Información guardada en localStorage:", modalInfo);
         Swal.fire({
             title: '¿Qué estás esperando?',
             confirmButtonText: 'Yendo',
             confirmButtonColor: '#B2DA53',
-            html: '<img src="../recursos/gatito2.gif" style="width: 50px; height: 50px;">', // Agrega la ruta de tu gif y ajusta el tamaño según sea necesario
+            html: '<img src="../recursos/gatito2.gif" style="width: 50px; height: 50px;">',
         });
     })
-})
+});
