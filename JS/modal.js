@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const tiempoTranscurrido = tiempoActual - (ultimaVez || 0);
 
     // VEr si pasaron 3 horas
-    const mostrarModal = !cerrado || tiempoTranscurrido >= 3 * 60 * 60 * 1000;
+    const mostrarModal = !cerrado || tiempoTranscurrido >= 1000;
 
     if (mostrarModal) {
         //  mostrar el modal despues de 10 segundos de entrar a la pagina
@@ -34,10 +34,12 @@ document.addEventListener("DOMContentLoaded", function () {
             title: 'Grandioso!',
             confirmButtonText: 'Cerrar',
             confirmButtonColor: '#B2DA53',
-            imageUrl: "../recursos/gatito.gif",
-            imageWidth: 100,
-            imageHeight: 100,
-            imageAlt: "Custom image",
+            backdrop: `
+            rgba(0,0,123,0.4)
+            url("../recursos/gatito.gif")
+            left top
+            no-repeat
+          `,
         });
     });
 
