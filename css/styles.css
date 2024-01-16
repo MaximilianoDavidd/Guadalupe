@@ -480,6 +480,7 @@ footer .copyright {
 .main-tips p {
   width: 80vw;
   margin: auto;
+  text-align: center;
 }
 
 .flecha-img {
@@ -1130,27 +1131,74 @@ h2 {
     width: 30vw;
   }
 }
-.porciones {
+.porciones-introduccion {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
 }
-.porciones h1 {
+.porciones-introduccion h1 {
   font-size: 1.2em;
   margin: 2em;
 }
-.porciones p {
+.porciones-introduccion p {
   width: 80%;
 }
 
+.porciones h2 {
+  font-size: 1.3em;
+  margin-bottom: 1.5em;
+}
+.porciones .lentejas-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.porciones .lentejas-card .img-cruda {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.porciones .lentejas-card .img-cruda p {
+  margin-bottom: 1em;
+  width: 60vw;
+}
+.porciones .lentejas-card .img-cruda img {
+  width: 80vw;
+  margin-bottom: 1em;
+}
+.porciones .lentejas-card .img-cocido {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 1em;
+  align-items: center;
+}
+.porciones .lentejas-card .img-cocido p {
+  margin-bottom: 1em;
+  width: 60vw;
+}
+.porciones .lentejas-card .img-cocido img {
+  width: 80vw;
+  margin-bottom: 1em;
+  color: aqua;
+}
+
 @media (min-width: 1024px) {
-  .porciones h1 {
+  .porciones-introduccion h1 {
     font-size: 1.5em;
     margin: 2em;
   }
-  .porciones p {
+  .porciones-introduccion p {
     width: 900px;
+  }
+  .porciones .lentejas-card .img-cruda img {
+    width: 30vw;
+  }
+  .porciones .lentejas-card .img-cocido img {
+    width: 30vw;
   }
 }/*# sourceMappingURL=styles.css.map */
