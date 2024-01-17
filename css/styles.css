@@ -89,7 +89,7 @@ body {
   color: black;
 }
 #section-modal .modal-agua .button-agua:hover {
-  background-color: #B2DA53;
+  background-color: rgb(178, 218, 82);
   color: #FFFFFF;
 }
 
@@ -110,7 +110,7 @@ body {
   text-align: center;
 }
 #tratamientos .mas-info p a {
-  color: #94C33A;
+  color: #94c33a;
   text-decoration: none;
 }
 #tratamientos .tratamientos-img p {
@@ -120,10 +120,10 @@ body {
 }
 #tratamientos .tratamientos-img p a {
   text-decoration: none;
-  color: #B2DA53;
+  color: rgb(178, 218, 82);
 }
 #tratamientos .tratamientos-img p a:hover {
-  color: #94C33A;
+  color: #94c33a;
 }
 #tratamientos .box-animados {
   display: flex;
@@ -283,6 +283,9 @@ body {
   #section-modal .modal-agua {
     width: 20vw;
   }
+  #section-modal .modal-agua p {
+    width: 20vw;
+  }
   #section-modal .modal-agua .button-agua {
     width: 6vw;
   }
@@ -335,10 +338,10 @@ footer ul {
 }
 footer ul a {
   text-decoration: none;
-  color: #94C33A;
+  color: #94c33a;
 }
 footer ul a:hover {
-  color: #B2DA53;
+  color: rgb(178, 218, 82);
 }
 footer .copyright {
   margin-left: 1em;
@@ -383,6 +386,9 @@ footer .copyright {
     margin-left: 30vw;
     margin-top: 20vh;
   }
+  footer .copyright p {
+    width: 10em;
+  }
 }
 /* Estilos del h1 logos de contacto y primer parrafo */
 .main-contacto {
@@ -408,10 +414,10 @@ footer .copyright {
 }
 .main-contacto a {
   text-decoration: none;
-  color: #94C33A;
+  color: #94c33a;
 }
 .main-contacto a:hover {
-  color: #B2DA53;
+  color: rgb(178, 218, 82);
 }
 
 /* Estilos de la info, calendario, medios de pago, cancelaciones */
@@ -661,7 +667,7 @@ h2 {
   color: #FFFFFF;
 }
 .boton-wsp2 .wsp:hover {
-  background-color: #B2DA53;
+  background-color: rgb(178, 218, 82);
 }
 
 .mas-detalles2 {
@@ -820,7 +826,7 @@ h2 {
 }
 .card-1 a .enlace-img {
   width: 80vw;
-  color: #94C33A;
+  color: #94c33a;
 }
 .card-1 a img {
   width: 2em;
@@ -907,11 +913,11 @@ h2 {
     width: 0.5em;
   }
   .main .aside::-webkit-scrollbar-thumb {
-    background-color: #B2DA53;
+    background-color: rgb(178, 218, 82);
     border-radius: 0.15em;
   }
   .main .aside::-webkit-scrollbar-thumb:hover {
-    background-color: #94C33A;
+    background-color: #94c33a;
   }
   .main .aside .info {
     display: flex;
@@ -936,11 +942,11 @@ h2 {
     margin-top: 0.5em;
   }
   .main .aside .info p a {
-    color: #B2DA53;
+    color: rgb(178, 218, 82);
     text-decoration: none;
   }
   .main .aside .info p a:hover {
-    color: #94C33A;
+    color: #94c33a;
   }
   .card-1 a {
     width: 30vw;
@@ -1025,7 +1031,7 @@ h2 {
   color: #FFFFFF;
 }
 .tacc-filter .button-tacc:hover {
-  background-color: #B2DA53;
+  background-color: rgb(178, 218, 82);
 }
 .tacc-filter .all-recipes {
   margin-left: 0.5em;
@@ -1043,7 +1049,7 @@ h2 {
   color: #FFFFFF;
 }
 .tacc-filter .all-recipes:hover {
-  background-color: #B2DA53;
+  background-color: rgb(178, 218, 82);
 }
 
 .recetario {
@@ -1146,59 +1152,30 @@ h2 {
   width: 80%;
 }
 
-.porciones h2 {
-  font-size: 1.3em;
-  margin-bottom: 1.5em;
-}
-.porciones .lentejas-card {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-}
-.porciones .lentejas-card .img-cruda {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.porciones .lentejas-card .img-cruda p {
-  margin-bottom: 1em;
-  width: 60vw;
-}
-.porciones .lentejas-card .img-cruda img {
-  width: 80vw;
-  margin-bottom: 1em;
-}
-.porciones .lentejas-card .img-cocido {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-top: 1em;
-  align-items: center;
-}
-.porciones .lentejas-card .img-cocido p {
-  margin-bottom: 1em;
-  width: 60vw;
-}
-.porciones .lentejas-card .img-cocido img {
-  width: 80vw;
-  margin-bottom: 1em;
-  color: aqua;
-}
-
 @media (min-width: 1024px) {
-  .porciones-introduccion h1 {
-    font-size: 1.5em;
+  .porciones-introduccion {
     margin: 2em;
   }
-  .porciones-introduccion p {
+  .porciones-introduccion h1 {
+    font-size: 1.5em;
+  }
+  p {
     width: 900px;
   }
-  .porciones .lentejas-card .img-cruda img {
-    width: 30vw;
-  }
-  .porciones .lentejas-card .img-cocido img {
-    width: 30vw;
-  }
+}
+.porciones .card .card-body .card-text {
+  width: auto;
+}
+.porciones .card .card-body .color-boton-porciones {
+  background-color: #94c33a;
+  font-weight: 500;
+}
+.porciones .modal {
+  height: 30vh;
+  width: 50vw;
+}
+.porciones .carousel-inner img {
+  max-height: 30vh;
+  max-width: 50vw;
+  margin: auto;
 }/*# sourceMappingURL=styles.css.map */

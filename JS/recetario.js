@@ -8,7 +8,7 @@ const recetas = [
         id: 19,
         name: "Pan integral",
         ingredientes: "½ kg de harina de trigo integral. 10 gramos de levadura seca de panadería. 400ml de agua tibia",
-        elaboracion: "Mezcla en un bol la harina integral de trigo con la levadura seca de panadería y una cucharada de sal. Si te gusta, puedes añadir en este momento algunas semillas. Agrega el agua tibia poco a poco a los ingredientes secos, hasta formar una masa homogénea. No es necesario que amases mucho. Deja levar hasta que duplique su volumen. Lleva al horno (precalentado a 180 °C) durante 45 minutos aproximadamente.",
+        elaboracion: "Mezcla en un bol la harina integral de trigo con la levadura seca de panadería y una cucharada de sal. Si te gusta, puedes añadir en este momento algunas semillas. Agrega el agua tibia poco a poco a los ingredientes secos, hasta formar una masa homogénea. No es necesario que amases mucho. Deja levar hasta que duplique su volumen. Lleva al horno (precalentado a 180°C) durante 45 minutos aproximadamente.",
         img: "https://images.unsplash.com/photo-1679224105686-af8294e7e94d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
     },

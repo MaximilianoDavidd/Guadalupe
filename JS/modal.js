@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     rejectdButton.addEventListener("click", () => {
         modal.style.display = "none";
-        // localStorage.setItem("modalInfo", JSON.stringify({ultimaVez: tiempoActual, cerrado: true}));
+        localStorage.setItem("modalInfo", JSON.stringify({ultimaVez: tiempoActual, cerrado: true}));
         console.log("Información guardada en localStorage:", modalInfo);
         Swal.fire({
             title: '¿Qué estás esperando?',
