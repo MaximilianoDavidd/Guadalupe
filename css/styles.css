@@ -302,6 +302,9 @@ body {
     width: 800px;
     text-align: left;
   }
+  #tratamientos .tratamientos-img .excusas {
+    text-align: center;
+  }
   /* estilos seccion sobre mi desktop */
   .sobre-mi-div {
     margin-top: 10vh;
@@ -465,10 +468,14 @@ footer .copyright {
     justify-content: space-evenly;
   }
   .contacto-img .img-p {
-    width: 30%;
+    width: 25%;
   }
   .contacto-img .img-p img {
     width: 5em;
+  }
+  .contacto-img .img-p p {
+    width: 20em;
+    margin-left: 1.5em;
   }
 }
 .main-tips {
@@ -740,14 +747,14 @@ h2 {
   }
   .mas-detalles-section .mas-detalles ul {
     width: 60%;
-    margin-left: 25%;
+    margin-left: 10%;
   }
   .mas-detalles-section .mas-detalles2 {
     width: 50%;
   }
   .mas-detalles-section .mas-detalles2 ul {
     width: 60%;
-    margin-left: 25%;
+    margin-left: 10%;
   }
   .boton-wsp .wsp {
     width: 10vw;
@@ -1152,6 +1159,58 @@ h2 {
   width: 80%;
 }
 
+.porciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.porciones .lentejas-plato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.porciones .lentejas-plato .img-plato p {
+  margin-top: 2em;
+}
+.porciones .lentejas-plato .img-plato img {
+  width: 80%;
+}
+.porciones .vaso {
+  display: flex;
+  flex-direction: column;
+}
+.porciones .vaso p {
+  margin-top: 2em;
+}
+.porciones .vaso .lentejas-vaso {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.porciones .vaso .lentejas-vaso .img-vaso {
+  display: flex;
+  flex-direction: column;
+}
+.porciones .vaso .lentejas-vaso .img-vaso img {
+  width: 50%;
+  margin-left: 2em;
+}
+.porciones .vaso .lentejas-vaso .img-vaso-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.porciones .vaso .lentejas-vaso .img-vaso-2 img {
+  width: 50%;
+}
+
 @media (min-width: 1024px) {
   .porciones-introduccion {
     margin: 2em;
@@ -1162,20 +1221,69 @@ h2 {
   p {
     width: 900px;
   }
-}
-.porciones .card .card-body .card-text {
-  width: auto;
-}
-.porciones .card .card-body .color-boton-porciones {
-  background-color: #94c33a;
-  font-weight: 500;
-}
-.porciones .modal {
-  height: 30vh;
-  width: 50vw;
-}
-.porciones .carousel-inner img {
-  max-height: 30vh;
-  max-width: 50vw;
-  margin: auto;
+  .porciones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .porciones .lentejas-plato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+  }
+  .porciones .lentejas-plato .img-plato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0em;
+    width: auto;
+  }
+  .porciones .lentejas-plato .img-plato p {
+    margin-top: 2em;
+    width: 20em;
+  }
+  .porciones .lentejas-plato .img-plato img {
+    width: 100%;
+  }
+  .porciones .vaso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+  }
+  .porciones .vaso p {
+    width: 20em;
+  }
+  .porciones .vaso .lentejas-vaso {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .porciones .vaso .lentejas-vaso .img-vaso {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .porciones .vaso .lentejas-vaso .img-vaso img {
+    width: 13em;
+    margin-left: 6em;
+  }
+  .porciones .vaso .lentejas-vaso .img-vaso-2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .porciones .vaso .lentejas-vaso .img-vaso-2 img {
+    width: 13em;
+  }
 }/*# sourceMappingURL=styles.css.map */

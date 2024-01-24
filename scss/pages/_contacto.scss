@@ -114,11 +114,15 @@
         justify-content: space-evenly;
 
         .img-p {
-            width: 30%;
+            width: 25%;
 
             img {
                 width: 5em;
             }
+         p{
+            width: 20em;
+            margin-left: 1.5em;
+         }
         }
     }
 }

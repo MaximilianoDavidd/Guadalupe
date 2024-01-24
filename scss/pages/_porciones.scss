@@ -17,20 +17,162 @@
     }
 }
 
+.porciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
 
+    
+    .lentejas-plato {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .img-plato {
+            p {
+                margin-top: 2em;
+            }
+
+            img {
+                width: 80%;
+            }
+        }
+
+    }  
+
+    .vaso{
+        display: flex;
+        flex-direction: column;
+          p{
+            margin-top: 2em;
+
+        }
+    .lentejas-vaso{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .img-vaso{
+            display: flex;
+            flex-direction: column;
+            img{width: 50%;
+                margin-left: 2em;
+
+            }
+
+        }
+        .img-vaso-2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            img{
+                width: 50%;
+            }
+        }
+        }
+    }
+}
+
+// porciones version desktop
 
 @media (min-width: 1024px) {
 
     .porciones-introduccion {
         h1 {
-            font-size: 1.5em;}
-            margin: 2em;
+            font-size: 1.5em;
         }
 
-        p {
-            width: 900px;
-        }
+        margin: 2em;
     }
 
- 
+    p {
+        width: 900px;
+    }
+
+    .porciones {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
+    
+        
+        .lentejas-plato {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 40%;
+            .img-plato {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                margin-left: 0em;
+                width: auto;
+                p {
+
+                    margin-top: 2em;
+                    width: 20em;
+                }
+    
+                img {
+                    width: 100%;
+                }
+            }
+    
+        }  
+
+        .vaso{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 45%;
+              p{
+                width: 20em;
+             
+              
+            }
+        .lentejas-vaso{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+    
+            .img-vaso{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                img{
+                    width: 13em;
+                    margin-left: 6em;
+    
+                }
+    
+            }
+            .img-vaso-2{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                img{
+                    width: 13em;
+                }
+    
+            }
+        }
+    }
+    }
+}

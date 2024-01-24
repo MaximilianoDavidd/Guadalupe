@@ -35,9 +35,6 @@ const tips = [
         img: "https://media.istockphoto.com/id/1254659212/es/foto/tuercas-en-las-manos-de-las-mujeres.jpg?s=612x612&w=0&k=20&c=oKo2tS2Dct3rfIgrCnT04xGirXO6OxMXnDFXSDb9F9s=",
 
     }
-
-
-
 ]
 
 
