@@ -2,6 +2,16 @@
   margin-top: 1em;
   margin-bottom: 2em;
 }
+.main-tips .tips-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-tips .tips-img img {
+  width: 70vw;
+  border-radius: 3px;
+}
 .main-tips h1 {
   display: flex;
   text-align: center;
@@ -10,10 +20,25 @@
   margin-bottom: 2em;
   margin-top: 1em;
 }
-.main-tips p {
-  width: 80vw;
-  margin: auto;
+.main-tips .negritas-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  margin: 2em;
+}
+.main-tips .negritas-p b {
+  width: 80%;
+}
+.main-tips .parrafo-introductorio {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+.main-tips .parrafo-introductorio p {
+  width: 80%;
 }
 
 .flecha-img {
@@ -89,17 +114,17 @@
   }
 }
 @media (min-width: 1024px) {
-  .main-tips p {
-    width: 900px;
+  .main-tips .tips-img img {
+    width: 40vw;
   }
-  .tips-content .tip-card {
+  .main-tips .tips-content .tip-card {
     width: 80vw;
   }
-  .tips-content .tip-card .img-tips {
+  .main-tips .tips-content .tip-card .img-tips {
     width: 15vw;
     margin: 2em 2em;
   }
-  .tips-content .tip-card .div-p .p-tips2 {
+  .main-tips .tips-content .tip-card .div-p .p-tips2 {
     width: 50vw;
   }
 }/*# sourceMappingURL=tips.css.map */

@@ -70,7 +70,7 @@
         .img-articulo1 {
             width: 50vw;
             margin-bottom: 1em;
-            width: 30vw;
+            width: 55vw;
             border: 1px solid rgba(0, 0, 0, 0.247);
             border-radius: 6px;
         }
@@ -264,8 +264,16 @@
     // detalle de articulo 1 para tablet
 
     .card-1 {
+
+        .div-articulo {
+
+            .img-articulo1 {
+                width: 30vw;
+            }
+        }
+
         a {
-            width: 30vw;
+            width: 55vw;
         }
     }
 
@@ -294,7 +302,6 @@
             }
         }
     }
-
 }
 
 
@@ -331,6 +338,10 @@
             margin: auto;
             margin-bottom: 5em;
 
+            .img-articulo1 {
+                width: 25vw;
+            }
+
             .informacion-articulo1 {
                 width: 60vw;
                 margin-left: 2vw;
@@ -339,8 +350,14 @@
 
             }
         }
+
+        a {
+            width: 26em;
+        }
     }
 
+
+    //estilos de los articulos traidos del js
 
     .articulos {
 

@@ -2,10 +2,23 @@
 
 // estilos del main
 
-.main-tips{
+.main-tips {
     margin-top: 1em;
     margin-bottom: 2em;
-    h1{
+
+    .tips-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 70vw;
+            border-radius: 3px;
+        }
+    }
+
+    h1 {
         display: flex;
         text-align: center;
         justify-content: center;
@@ -13,31 +26,54 @@
         margin-bottom: 2em;
         margin-top: 1em;
     }
-    p{
-        width: 80vw;
-        margin: auto;
-        text-align: center;
 
+    .negritas-p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 2em;
+
+        b {
+            width: 80%;
+        }
+
+    }
+
+    .parrafo-introductorio {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 1em;
+
+        p {
+            width: 80%;
+
+        }
     }
 }
 
-.flecha-img{
+.flecha-img {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    img{
+
+    img {
         width: 5em;
-    
+
     }
 }
 
-.tips-content{
+// estilos para los tips traidos del js
+
+.tips-content {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .tip-card{
+    .tip-card {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -46,26 +82,27 @@
         width: 85vw;
 
 
-        .img-tips{
+        .img-tips {
             width: 50vw;
             margin-top: 2em;
             border: 1px solid rgba(0, 0, 0, 0.126);
             border-radius: 3px;
         }
 
-        .div-p{
+        .div-p {
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
             justify-content: center;
 
-            .p-tips{
+            .p-tips {
                 font-weight: bold;
                 margin-top: 1em;
                 width: 80vw;
             }
-            .p-tips2{
+
+            .p-tips2 {
                 font-size: small;
                 width: 60vw;
                 margin-bottom: 3em;
@@ -80,82 +117,86 @@
 
 @media (min-width: 768px) {
 
-    .flecha-img{
-        img{
+
+
+    .flecha-img {
+        img {
             width: 10em;
         }
     }
 
+    //estilos de los tips de js tablet
 
-.tips-content{
+    .tips-content {
 
-    .tip-card{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-top: 2em;
-        box-shadow: 0px 0px 5px;
-        width: 90vw;
+        .tip-card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 2em;
+            box-shadow: 0px 0px 5px;
+            width: 90vw;
 
 
-        .img-tips{
-            width: 20vw;
-            margin-left: 2em;
-            margin-top: 0;
-        }
-
-        .div-p{
-
-            .p-tips{
+            .img-tips {
                 width: 20vw;
-            }
-
-            .p-tips2{
                 margin-left: 2em;
-                padding-right: 1em;
-
+                margin-top: 0;
             }
+
+            .div-p {
+
+                .p-tips {
+                    width: 20vw;
+                }
+
+                .p-tips2 {
+                    margin-left: 2em;
+                    padding-right: 1em;
+
+                }
+            }
+
         }
-
     }
-}
 
 
 }
 
-
+// estilos version desktop
 
 @media (min-width: 1024px) {
 
-    .main-tips{
+    .main-tips {
 
-        p{
-            width: 900px;
-    
-        }
-    }
-
-
-    .tips-content{
-
-        .tip-card{
-            width: 80vw;
-
-            .img-tips{
-                width: 15vw;
-                margin: 2em 2em;
-                
+        .tips-img {
+            img {
+                width: 40vw;
             }
-    
-            .div-p{
-    
-                .p-tips2{
-                   width: 50vw;
+        }
+
+        // estilos para los tips de js version desktop
+
+
+        .tips-content {
+
+            .tip-card {
+                width: 80vw;
+
+                .img-tips {
+                    width: 15vw;
+                    margin: 2em 2em;
                 }
+
+                .div-p {
+
+                    .p-tips2 {
+                        width: 50vw;
+                    }
+                }
+
             }
-    
         }
+
     }
-    
-    
-    }
+}
