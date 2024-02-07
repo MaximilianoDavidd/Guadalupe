@@ -1,6 +1,7 @@
 const recetario = document.getElementById("recetarioId");
 const buttonTacc = document.getElementById("buttonTacc");
 const allRecipesButton = document.getElementById("allRecipes");
+const header = document.getElementById("header"); // Agrega un elemento en tu HTML con id "header"
 let recetasActuales;
 
 // funcion para realizar solicitud HTTP y llamar las recetas del archivo json
@@ -36,6 +37,13 @@ const displayCurrentRecipes = () => {
         `;
         recetario.appendChild(content);
     });
+
+    // Muestra el encabezado correspondiente
+    if (recetasActuales.length > 0) {
+        header.innerHTML = "<h2>Todas las recetas</h2>";
+    } else {
+        header.innerHTML = "<h2>No hay recetas disponibles.</h2>";
+    }
 };
 
 // Función para filtrar recetas por "sin TACC"
@@ -43,6 +51,7 @@ const filterByTacc = () => {
     // Filtra las recetas que son "sin TACC"
     recetasActuales = recetasActuales.filter(receta => receta.detalle === "sin TACC");
     displayCurrentRecipes();
+    header.innerHTML = "<h2>Recetas sin TACC</h2>"; // Agrega este encabezado cuando se filtran las recetas sin TACC
 };
 
 // Función para mostrar todas las recetas nuevamente
@@ -59,8 +68,6 @@ allRecipesButton.addEventListener("click", showAllRecipes);
 
 // Mostrar todas las recetas al cargar la página
 getRecipes();
-
-
 
 
 

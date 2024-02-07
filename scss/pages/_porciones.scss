@@ -8,12 +8,17 @@
     align-items: center;
 
     h1 {
-        font-size: 1.2em;
+        font-size: 1.4em;
         margin: 2em;
     }
 
     p {
         width: 80%;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color3;
     }
 }
 
@@ -25,15 +30,23 @@
     text-align: center;
 
 
-    
+
     .lentejas-plato {
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
+
         .img-plato {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
             p {
                 margin-top: 2em;
+                width: 12em;
             }
 
             img {
@@ -41,44 +54,181 @@
             }
         }
 
-    }  
+    }
 
-    .vaso{
+    .vaso {
         display: flex;
         flex-direction: column;
-          p{
-            margin-top: 2em;
-
-        }
-    .lentejas-vaso{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
         text-align: center;
+        justify-content: center;
+        align-items: center;
 
-        .img-vaso{
-            display: flex;
-            flex-direction: column;
-            img{width: 50%;
-                margin-left: 2em;
-
-            }
+        p {
+            margin-top: 2em;
+            width: 12em;
 
         }
-        .img-vaso-2{
+
+        .lentejas-vaso {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
             justify-content: center;
             text-align: center;
-            img{
-                width: 50%;
+
+            .img-vaso {
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+
+                img {
+                    width: 70%;
+                    margin-left: 2em;
+
+                }
+
             }
-        }
+
+            .img-vaso-2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 40%;
+
+                img {
+                    width: 70%;
+                }
+            }
         }
     }
 }
+
+h2 {
+    font-size: 1.1em;
+    margin-top: 4em;
+
+}
+
+.porciones-2 {
+    .fideos {
+        .img-plato {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 80vw;
+            }
+
+            p {
+                margin-top: 1.5em;
+                width: 12em;
+            }
+
+        }
+
+    }
+}
+
+.porciones-3 {
+    .arroz {
+        .img-plato {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 60vw;
+            }
+
+            p {
+                width: 12em;
+                margin-top: 1.5em;
+            }
+
+        }
+
+    }
+}
+
+.porciones-4 {
+    .queso-mantecoso {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        .foto-arriba {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 60vw;
+            }
+
+            p {
+                width: 12em;
+                margin-top: 1.5em;
+            }
+        }
+
+        .foto-costado {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 70vw;
+            }
+
+            p {
+                width: 12em;
+                margin-top: 1.5em;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .porciones {
+        .vaso {
+
+            .lentejas-vaso {
+
+                .img-vaso {
+                    width: 30%;
+
+                    img {
+                        width: 60%;
+                        margin-left: 2em;
+                    }
+
+                }
+
+                .img-vaso-2 {
+                    width: 30%;
+
+                    img {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 // porciones version desktop
 
@@ -102,15 +252,16 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-    
-    
-        
+
+
+
         .lentejas-plato {
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             width: 40%;
+
             .img-plato {
                 display: flex;
                 flex-direction: column;
@@ -118,61 +269,67 @@
 
                 margin-left: 0em;
                 width: auto;
+
                 p {
 
                     margin-top: 2em;
                     width: 20em;
                 }
-    
+
                 img {
                     width: 100%;
                 }
             }
-    
-        }  
 
-        .vaso{
+        }
+
+        .vaso {
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 45%;
-              p{
+
+            p {
                 width: 20em;
-             
-              
+
+
             }
-        .lentejas-vaso{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            width: 100%;
-    
-            .img-vaso{
-                width: 50%;
+
+            .lentejas-vaso {
                 display: flex;
-                flex-direction: column;
-                img{
-                    width: 13em;
-                    margin-left: 6em;
-    
-                }
-    
-            }
-            .img-vaso-2{
-                width: 50%;
-                display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
-                img{
-                    width: 13em;
+                width: 100%;
+
+                .img-vaso {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+
+                    img {
+                        width: 13em;
+                        margin-left: 6em;
+
+                    }
+
                 }
-    
+
+                .img-vaso-2 {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+
+                    img {
+                        width: 13em;
+                    }
+
+                }
             }
         }
-    }
     }
 }

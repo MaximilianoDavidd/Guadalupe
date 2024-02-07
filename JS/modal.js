@@ -14,7 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const tiempoActual = new Date().getTime();
     const tiempoTranscurrido = tiempoActual - (ultimaVez || 0);
 
-    // VEr si pasaron 3 horas
+    // Ver si pasaron 3 horas. En caso de no pasar las 3 horas, el modal no va a volver a abrirse para no molestar al usuario todo el tiempo que vuelva a la pagina principal
+    //
     const mostrarModal = !cerrado || tiempoTranscurrido >= 3 * 60 * 60 * 1000;
 
     if (mostrarModal) {
