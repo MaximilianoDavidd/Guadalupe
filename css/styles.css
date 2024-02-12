@@ -1370,6 +1370,62 @@ h2 {
   .porciones .vaso .lentejas-vaso .img-vaso-2 img {
     width: 60%;
   }
+  .porciones-2 .fideos .img-plato img {
+    width: 25em;
+  }
+  .porciones-2 .fideos .img-plato p {
+    margin-top: 1.5em;
+    width: 12em;
+  }
+  .porciones-3 .arroz .img-plato {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .porciones-3 .arroz .img-plato img {
+    width: 15em;
+  }
+  .porciones-3 .arroz .img-plato p {
+    width: 12em;
+    margin-top: 1.5em;
+  }
+  .porciones-4 .queso-mantecoso {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .porciones-4 .queso-mantecoso .foto-arriba {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .porciones-4 .queso-mantecoso .foto-arriba img {
+    width: 15em;
+  }
+  .porciones-4 .queso-mantecoso .foto-arriba p {
+    width: 17em;
+    margin-top: 1.5em;
+  }
+  .porciones-4 .queso-mantecoso .foto-costado {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .porciones-4 .queso-mantecoso .foto-costado img {
+    width: 20em;
+  }
+  .porciones-4 .queso-mantecoso .foto-costado p {
+    width: 12em;
+    margin-top: 1.5em;
+  }
 }
 @media (min-width: 1024px) {
   .porciones-introduccion {
@@ -1378,7 +1434,7 @@ h2 {
   .porciones-introduccion h1 {
     font-size: 1.5em;
   }
-  p {
+  .porciones-introduccion p {
     width: 900px;
   }
   .porciones {
@@ -1407,13 +1463,14 @@ h2 {
     width: 20em;
   }
   .porciones .lentejas-plato .img-plato img {
-    width: 100%;
+    width: 30em;
   }
   .porciones .vaso {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 45%;
+    width: 40%;
+    height: 40em;
   }
   .porciones .vaso p {
     width: 20em;
@@ -1424,19 +1481,24 @@ h2 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 100%;
+    width: 50em;
+    height: 60em;
   }
   .porciones .vaso .lentejas-vaso .img-vaso {
-    width: 50%;
+    width: 20em;
+    height: 35em;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .porciones .vaso .lentejas-vaso .img-vaso img {
-    width: 13em;
     margin-left: 6em;
+    width: 12em;
   }
   .porciones .vaso .lentejas-vaso .img-vaso-2 {
-    width: 50%;
+    width: 20em;
+    height: 35em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1444,6 +1506,69 @@ h2 {
     text-align: center;
   }
   .porciones .vaso .lentejas-vaso .img-vaso-2 img {
-    width: 13em;
+    width: 12em;
+  }
+  .porciones-2 .fideos .img-plato {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .porciones-2 .fideos .img-plato img {
+    width: 30em;
+  }
+  .porciones-2 .fideos .img-plato p {
+    margin-top: 1.5em;
+    width: 12m;
+  }
+  .porciones-3 .arroz .img-plato {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .porciones-3 .arroz .img-plato img {
+    width: 15em;
+  }
+  .porciones-3 .arroz .img-plato p {
+    width: 12em;
+    margin-top: 1.5em;
+  }
+  .porciones-4 .queso-mantecoso {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .porciones-4 .queso-mantecoso .foto-arriba {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .porciones-4 .queso-mantecoso .foto-arriba img {
+    width: 20em;
+  }
+  .porciones-4 .queso-mantecoso .foto-arriba p {
+    width: 12em;
+    margin-top: 1.5em;
+  }
+  .porciones-4 .queso-mantecoso .foto-costado {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .porciones-4 .queso-mantecoso .foto-costado img {
+    width: 25em;
+  }
+  .porciones-4 .queso-mantecoso .foto-costado p {
+    width: 12em;
+    margin-top: 1.5em;
   }
 }/*# sourceMappingURL=styles.css.map */
