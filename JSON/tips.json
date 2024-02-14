@@ -2,13 +2,13 @@
     {
       "id": 1,
       "parrafo": "Planificar comidas",
-      "parrafo2": "¡La clave es PLANIFICAR tus comidas! Elige un día de la semana para hacerlo. Con planificar cada 7 días para empezar, está bien. Incluye alimentos/platos que te gusten, intercalados con otros que no tanto pero que sabes que te hacen bien. Elige 1 proteína y 3 o 4 verduras por plato (así no te aburres). Sabiendo qué vas a comer, es más fácil decidir qué comprar, te ahorras tiempo y tomas decisiones más rápidas en las compras. Dedica 1 o 2 horas de tu fin de semana a lavar, cocinar y congelar para toda la semana.",
+      "parrafo2": "¡La clave es PLANIFICAR tus comidas! Elegí un día de la semana para hacerlo. Con planificar cada 7 días para empezar, está bien. Incluye alimentos/platos que te gusten, intercalados con otros que no tanto pero que sabés que te hacen bien. Elegí 1 proteína y 3 o 4 verduras por plato (así no te aburrís). Sabiendo qué vas a comer, es más fácil decidir qué comprar, te ahorras tiempo y tomas decisiones más rápidas en las compras. Dedicá 1 o 2 horas de tu fin de semana a lavar, cocinar y congelar para toda la semana.",
       "img": "../recursos/planificar-tips.webp"
     },
     {
       "id": 2,
       "parrafo": "Variedad de comidas",
-      "parrafo2": "Para empezar a sumar más variedad a tu alimentación, te dejo algunos tips: Que tu desayuno sea diferente a la merienda (por ejemplo, mate y fruta en el desayuno, y yogurt con copos en la merienda). Elige verduras de temporada, alternando platos crudos y cocidos (recuerda que en la cocción muchas vitaminas se pierden). Consume a diario diferentes proteínas; de esta forma, estarás incorporando no solo la proteína sino también otros nutrientes beneficiosos, como las grasas saludables del pescado, el fósforo del huevo o el potasio de las legumbres.",
+      "parrafo2": "Para empezar a sumar más variedad a tu alimentación, te dejo algunos tips: Que tu desayuno sea diferente a la merienda (por ejemplo, mate y fruta en el desayuno, y yogurt con copos en la merienda). Elegí verduras de temporada, alternando platos crudos y cocidos (recuerda que en la cocción muchas vitaminas se pierden). Consume a diario diferentes proteínas; de esta forma, estarás incorporando no solo la proteína sino también otros nutrientes beneficiosos, como las grasas saludables del pescado, el fósforo del huevo o el potasio de las legumbres.",
       "img": "../recursos/variado-tips.jpg"
     },
     {
